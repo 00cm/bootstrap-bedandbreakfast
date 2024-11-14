@@ -1,0 +1,13 @@
+#brand, .navbar-nav > a {
+    color: white;
+}
+
+#carouselExample {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-caption {
+    background-color: black;
+    opacity: 50%;
+}
