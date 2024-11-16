@@ -10,10 +10,118 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c36a9ad454.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid text-bg-dark p-3">
+            <a href="index.html" class="navbar-brand" id="brand">SPRINGFIELD B&B</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-bg-dark p-3" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="#">Rooms</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
+    <div class="contact-container">
+        <div class="form-container">
+            <h2>Book Your Stay</h2>
+            <form action="index.html" method="GET">
+
+                <!-- Name and Contact Information -->
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <small class="form-text text-muted">We'll send your booking confirmation here.</small>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+
+                <!-- Booking Details -->
+                <div>
+                    <label for="checkinDate">Check-in Date</label>
+                    <input type="date" class="form-control" id="checkinDate" name="checkinDate" required>
+                </div>
+
+                <div>
+                    <label for="checkoutDate">Check-out Date</label>
+                    <input type="date" class="form-control" id="checkoutDate" name="checkoutDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type</label>
+                    <select class="form-select" id="roomType" name="roomType" size="3" required>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit Booking</button>
+            </form>
+        </div>
+        <div class="google-maps-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.6581435156636!2d-93.30486952371588!3d37.20834844458556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf63ab360e148b%3A0x6e0aa324e54e473a!2s909%20W%20College%20St%2C%20Springfield%2C%20MO%2065806!5e0!3m2!1sen!2sus!4v1731777259841!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="icon-container">
+            <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+        </div>
+        <div class="info-container">
+            <div class="contact">
+                <h3>Springfield B&B</h3>
+                <address><i class="fa-solid fa-location-dot"></i>909 W. College
+                    Springfield, MO 65806
+                </address>
+                <p class="telephone"><i class="fa-solid fa-phone"></i> 417-876-5432</p>
+                <p class="email"><i class="fa-solid fa-envelope"></i> springfieldbandb@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <h3>INFO</h3>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Directions</a></li>
+                </ul>
+            </div>
+            <div class="rooms">
+                <h3>ROOMS</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Guest Rooms</a></li>
+                    <li><a href="#">Main House</a></li>
+                    <li><a href="#">The Cottage Inn</a></li>
+                    <li><a href="#">Carriage House</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ body {
 }
 
 #carouselExample {
-    width: 45%;
+    width: 40%;
     margin: auto;
 }
 
@@ -54,6 +54,25 @@ body {
     --bs-btn-hover-border-color: var(--primary);
 }
 
+/* CONTACT PAGE */
+
+.contact-container {
+    width: 80%;
+    margin: auto;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-select {
+    overflow: hidden;
+}
+
+#submit {
+    margin-top: 3%;
+}
+
 /* FOOTER */
 
 .footer-container {
@@ -65,6 +84,10 @@ body {
 .icon-container {
     text-align: center;
     margin-top: 3%;
+}
+
+.icon-container > a {
+    color: var(--off-white);
 }
 
 i {
@@ -79,7 +102,8 @@ i {
     justify-content: space-around;
 }
 
-h3, .contact {
+.info-container > div {
+    width: 33%;
     text-align: center;
 }
 
