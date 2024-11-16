@@ -1,13 +1,102 @@
+:root {
+    --primary: #6fac71;
+    --dark: #4c754d;
+    --light: #a3e0a6;
+    --off-white: #F1F8E9;
+}
+
+body {
+    background-color: var(--light);
+}
+
+/* NAVIGATION */
+
+.bg-body-tertiary, .container-fluid, .navbar-nav, .navbar-collapse  {
+    background-color: var(--primary) !important;
+}
+
 #brand, .navbar-nav > a {
-    color: white;
+    color: var(--off-white);
+}
+
+/* MAIN PAGE */
+
+.main-container {
+    margin-top: 5%;
 }
 
 #carouselExample {
-    width: 50%;
+    width: 45%;
     margin: auto;
 }
 
 .carousel-caption {
-    background-color: black;
-    opacity: 50%;
+    background-color: var(--primary);
+    opacity: 75%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.card-body {
+    background-color: var(--primary);
+    color: var(--off-white);
+}
+
+.btn {
+    background-color: var(--dark);
+    --bs-btn-border-color: var(--off-white);
+    --bs-btn-hover-bg: var(--light);
+    --bs-btn-hover-border-color: var(--primary);
+}
+
+/* FOOTER */
+
+.footer-container {
+    background-color: var(--primary);
+    color: var(--off-white);
+    padding-top: 10px;
+}
+
+.icon-container {
+    text-align: center;
+    margin-top: 3%;
+}
+
+i {
+    margin: 10px;
+}
+
+.info-container {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3, .contact {
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list > li > a {
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+.footer-list > li > a:hover {
+    color: black;
+}
+
+.contact > p, address {
+    margin: 0;
 }
